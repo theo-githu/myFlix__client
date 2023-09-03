@@ -20,7 +20,7 @@ export const MainView = () => {
     if(!token) 
     return;
     
-    fetch("https://movieflix-899d9c6c8969.herokuapp.com/movies", {
+    fetch("https://movieapp-1234-d69a5eea9685.herokuapp.com/movies", {
         headers: {Authorization: `Bearer ${token}`},
     })
     .then((response) => response.json())
